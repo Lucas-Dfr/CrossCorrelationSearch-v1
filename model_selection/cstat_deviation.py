@@ -67,8 +67,8 @@ def db_compute_goodness_of_the_fit_from_cstat_v1(data,model,dof,xspec_cstat,verb
     This function returns 
 
     Args:
-        data (array): tuple of floats containing the spectrum rates for noticed channels in counts
-        model (array): list of the model values in counts
+        data (list): list of floats containing the spectrum rates for noticed channels in counts
+        model (list): list of the model values in counts
         dof (int): degree of freedom of the fit
         xspec_cstat (float): Cstat computed by xspec
         

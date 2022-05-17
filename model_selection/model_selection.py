@@ -22,9 +22,11 @@ Plot.xAxis = 'channel'
 Plot('counts')
 model_values = Plot.model()
 
-goodness = db_compute_goodness_of_the_fit_from_cstat_v1(data_values,model_values,dof,xspec_cstat)
+cstat_deviation = db_compute_goodness_of_the_fit_from_cstat_v1(data_values,model_values,dof,xspec_cstat, verbose=False)
 
-print("Goodness:", goodness)
+print("cstat_deviation:", cstat_deviation)
+
+
 
 
 

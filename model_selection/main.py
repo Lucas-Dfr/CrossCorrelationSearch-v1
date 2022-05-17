@@ -14,3 +14,5 @@ selected_models = select_models(file_names_list,2.)
 
 for file in selected_models:
     print(file)
+
+#select_models_plot(file_names_list, 2.)

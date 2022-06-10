@@ -1,6 +1,8 @@
+from numpy import linspace
 from xspec import *
 from cstat_deviation import *
 import matplotlib.pyplot as plt
+import numpy as np
 
 def compute_deviation(file_name): 
     """
@@ -72,6 +74,11 @@ def select_models_plot(file_names_list, deviation_min):
         
     dev_min = [deviation_min]*len(file_names_list)
         
+    plt.style.use(['science','no-latex'])
+    
+    plt.xlabel('model ID')
+    plt.ylabel('deviation / sigma')
+    
     plt.plot(file_numbers, cstat_deviations, 'ro')
     plt.plot(file_numbers, dev_min, '-b')
     plt.show()

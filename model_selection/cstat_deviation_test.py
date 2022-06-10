@@ -5,7 +5,7 @@ from xspec import *
 This test is meant to compute the cstat deviation for a single file
 """
 
-Xset.restore('f008_TBabs_diskbb_powerlaw_famodel.xcm')
+Xset.restore('f006_TBabs_diskbb_powerlaw_famodel.xcm')
 
 Fit.perform() 
 xspec_cstat = Fit.statistic

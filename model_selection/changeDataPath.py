@@ -6,9 +6,9 @@ This is a script to change the name of the data path in xcm files from
 to b_XXX_opt.pha in order to remove hard coded path
 """
 
-HEAD = '/Users/lucas/Documents/IRAP/Data/BURST_SPECTRA/burst_0199sig_num1_1050300109_intervals_for1000counts/grouping_step1_bin1/'
+HEAD = '/Users/lucas/Documents/IRAP/CrossCorrelationSearch/data/BURST_SPECTRA/burst_0217sig_num1_2050300110_intervals_for1000counts/grouping_step1_bin1'
 
-for i in range(1, 41):
+for i in range(1, 54):
     if i < 10:
         file_name = 'f00' + str(i) + '_TBabs_diskbb_powerlaw_famodel.xcm'
         data_file = 'b_00' + str(i) + '_opt.pha'
